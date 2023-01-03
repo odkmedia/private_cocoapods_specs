@@ -1,0 +1,1 @@
+# private_cocoapods_specs
