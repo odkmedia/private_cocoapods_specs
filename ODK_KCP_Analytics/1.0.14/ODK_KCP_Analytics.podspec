@@ -29,15 +29,20 @@ Pod::Spec.new do |spec|
   # iOS Dependencies
   spec.ios.dependency "AFNetworking+RetryPolicy"
 
-  other_frameworks =  ['KCP_Analytics']
+  other_frameworks_ios =  ['KCP_Analytics_iOS']
+  other_frameworks_tvos =  ['KCP_Analytics_tvOS']
   
-  other_ldflags = '$(inherited) -framework ' + other_frameworks.join(' -framework ')
+  other_ldflags_ios = '$(inherited) -framework ' + other_frameworks_ios.join(' -framework ')
+  other_ldflags_tvos = '$(inherited) -framework ' + other_frameworks_tvos.join(' -framework ')
 
   spec.xcconfig = { 
     'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ODK_KCP_Analytics"',
 
-    'OTHER_LDFLAGS[arch=arm64]'  => other_ldflags,
-    'OTHER_LDFLAGS[arch=armv7]'  => other_ldflags,
-    'OTHER_LDFLAGS[arch=armv7s]' => other_ldflags
+    'OTHER_LDFLAGS[arch=arm64][sdk=tvos*]'  => other_ldflags_tvos,
+    'OTHER_LDFLAGS[arch=armv7][sdk=tvos*]'  => other_ldflags_tvos,
+    'OTHER_LDFLAGS[arch=armv7s][sdk=tvos*]' => other_ldflags_tvos,
+    'OTHER_LDFLAGS[arch=arm64][sdk=iphoneos*]'  => other_ldflags_ios,
+    'OTHER_LDFLAGS[arch=armv7][sdk=iphoneos*]'  => other_ldflags_ios,
+    'OTHER_LDFLAGS[arch=armv7s][sdk=iphoneos*]' => other_ldflags_ios,
   }
 end
