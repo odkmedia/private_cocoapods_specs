@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         				= "KCP_Analytics"
+  spec.name         				= "ODK_KCP_Analytics"
   spec.version      				= "1.0.14"
   spec.summary      				= "KCP Analytics framework"
   spec.description  				= "KCP Analytics framework for iOS and tvOS"
