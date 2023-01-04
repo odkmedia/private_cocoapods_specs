@@ -31,8 +31,7 @@ Pod::Spec.new do |spec|
 
   other_frameworks =  ['KCP_Analytics']
   
-  other_ldflags = '$(inherited) -framework ' + other_frameworks.join(' -framework ') + 
-    ' -lz -lstdc++'
+  other_ldflags = '$(inherited) -framework ' + other_frameworks.join(' -framework ')
 
   spec.xcconfig = { 
     'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/KCP_Analytics"',
