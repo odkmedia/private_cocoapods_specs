@@ -45,4 +45,5 @@ Pod::Spec.new do |spec|
       'OTHER_LDFLAGS[arch=armv7][sdk=iphoneos*]'  => other_ldflags_ios,
       'OTHER_LDFLAGS[arch=armv7s][sdk=iphoneos*]' => other_ldflags_ios,
     }
+    
   end
