@@ -36,7 +36,7 @@ Pod::Spec.new do |spec|
   other_ldflags_tvos = '$(inherited) -framework ' + other_frameworks_tvos.join(' -framework ')
 
   spec.xcconfig = { 
-    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ODK_KCP_Analytics"',
+    'FRAMEWORK_SEARCH_PATHS' => '$(PODS_ROOT)/ODK_KCP_Analytics_Simulator',
 
     'OTHER_LDFLAGS[arch=arm64][sdk=tvossimulator*]'  => other_ldflags_tvos,
     'OTHER_LDFLAGS[arch=armv7][sdk=tvossimulator*]'  => other_ldflags_tvos,
