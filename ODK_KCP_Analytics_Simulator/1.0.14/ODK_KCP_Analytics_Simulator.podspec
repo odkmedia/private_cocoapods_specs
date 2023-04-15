@@ -18,10 +18,10 @@ Pod::Spec.new do |spec|
   spec.source       				= { :git => "https://github.com/odkmedia/private_cocoapods_specs.git", :branch => "main" }
   
   spec.ios.vendored_frameworks		= "Frameworks/kcpa_sdk_v1.0.14_simulator/KCP_Analytics_iOS.framework"
-  spec.ios.deployment_target		= "10.0"
+  spec.ios.deployment_target		= "11.0"
   
   spec.tvos.vendored_frameworks		= "Frameworks/kcpa_sdk_v1.0.14_simulator/KCP_Analytics_tvOS.framework"
-  spec.tvos.deployment_target		= "10.0"
+  spec.tvos.deployment_target		= "11.0"
   
   # Common Dependencies
   spec.dependency "AFNetworking", '>= 4.0'
