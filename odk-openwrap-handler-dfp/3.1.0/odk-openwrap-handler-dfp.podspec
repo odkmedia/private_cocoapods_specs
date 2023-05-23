@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "11.0"
 
-  spec.vendored_frameworks		= "Frameworks/odk-openwrap-handler-dfp/OpenWrapHandlerDFP.xcframework"
+  spec.vendored_frameworks		= "Frameworks/odk-openwrap-handler-dfp/3.1.0/OpenWrapHandlerDFP.xcframework"
  
   spec.static_framework = true 
   spec.frameworks = ["Foundation", "UIKit"]
