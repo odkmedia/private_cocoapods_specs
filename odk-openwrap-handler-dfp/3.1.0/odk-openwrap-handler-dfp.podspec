@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = ["Foundation", "UIKit"]
 
   # Common Dependencies
-  spec.dependency "OpenWrapSDK"
+  spec.dependency "odk-openwrap-sdk"
   spec.dependency "Google-Mobile-Ads-SDK", ">=8.12.0"
   
 end
